@@ -41,7 +41,7 @@ function Feature({Svg, title, description}) {
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className="text--center padding-horiz--md text-blue-700">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
@@ -52,7 +52,7 @@ function Feature({Svg, title, description}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
+      <div className="container bg-blue-300">
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
